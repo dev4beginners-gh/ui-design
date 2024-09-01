@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+.landing-page {
+}
+
+.navbar {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+  position: absolute;
+}
+
+.fa-solid {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dish-selected {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:50px ;
+}
+
+.dish-selected-image img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.dish-selected-info-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center; 
+}
+#dishRank {
+  font-size: 20px;
+}
+#dishName {
+  font-size: 100px;
+}
+.dish-caraousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left:80px;
+  width: 70%;
+  gap: 20px;
+
+}
+.dish-caraousel img {
+  width: 100px;
+  height: 100px;
+} 
+.dish-caraousel-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.dish-caraousel-button div {
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+  height: 180px;
+  padding: 10px;
+  cursor: pointer;
+}
+.active-dish {
+  border-radius: 10px;
+  background-color: #e3e4e4;
+}
+
+.dish-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin:auto;
+}
+
+.dish-overview {
+  background-color: #e3e4e4;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  margin-top: 150px;
+  width: 400px;
+  max-width: 400px;
+}
+
+.dish-overview-ingred-buttons, #like-dislike {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#like-dislike i {
+  font-size: 20px;
+}
+
+.in-active {
+  color: grey;
+}
+
+.dish-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  gap: 10px;
+  width: 350px;
+  height: 300px;
+
+}
+.dish-review #ratings {
+  font-size: 50px;
+  background-color: orange;
+  width: 60px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.dish-review #reviewHeading {
+  font-size: 30px;
+}
+
+.dish-review #reviewDetails {
+  color: grey;
+}
+
+.dish-selected-info-buttons i {
+  font-size: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 70px;
+  margin-top: 20px;
+}
+.footer-icons i {
+  font-size: 30px;
+  
+}
+
+.footer-icons div {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.fa-solid {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.fa-thumbs-up {
+  color: #f39c12;
+}
+.fa-solid:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+.dish-selected-image img {
+  transition: transform 0.5s ease;
+}
+
+.dish-selected-image img:hover {
+  transform: scale(1.1);
+}
+
+.dish-caraousel-button div {
+  transition: transform 0.3s ease;
+}
+
+.dish-caraousel-button div {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dish-caraousel-button div:hover:not(.active-dish) {
+  transform: scale(1.05);
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.dish-overview {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.dish-overview.show {
+  opacity: 1;
+}
+
+.dish-overview {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.dish-overview.show {
+  opacity: 1;
+}
+
+.footer-icons i {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.dish-review #ratings {
+  transition: background-color 0.3s ease;
+}
+
+.dish-review #ratings:hover {
+  background-color: #e67e22;
+}
+
+.fa-utensils {
+  background-color: #e3e4e4;
+  border-radius: 20%;
+  padding: 15px;
+}
+
+/* CSS for animations */
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.dish-selected-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dish-selected-image img.animating {
+  animation: slideFromTop 0.5s forwards;
+}
+
+.dish-selected-image img.slide-out {
+  animation: slideToLeft 0.5s forwards;
+}
+
+.dish-selected-info {
+  transition: opacity 0.5s ease;
+}
+
+.dish-selected-info.hidden {
+  opacity: 0;
+}
+
+@keyframes dishImageAnimation {
+  0% { transform: translate(-100%, -100%) rotate(0deg); opacity: 0; }
+  100% { transform: translate(0, 0) rotate(360deg); opacity: 1; }
+}
+
+@keyframes footerAnimation {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes carouselAnimation {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes overviewAnimation {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.dish-selected-image img {
+  animation: dishImageAnimation 1.5s ease-in-out forwards;
+}
+
+.dish-selected-image-animation {
+  animation: dishImageAnimation 1.5s ease-in-out forwards;
+}
+
+
+footer {
+  animation: footerAnimation 1s ease-in-out forwards;
+}
+
+.dish-caraousel {
+  animation: carouselAnimation 1s ease-in-out forwards;
+}
+
+
+.dish-overview {
+  animation: overviewAnimation 1s ease-in-out forwards;
+}
+
+

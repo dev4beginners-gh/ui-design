@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="navbar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dish-content">
+      <div class="dish-info">
+        <div class="dish-selected">
+          <div class="dish-selected-image">
+            <img id="dishImage" src="assets/images/pizza-1.png" alt="Dish Image">
+          </div>
+          <div class="dish-selected-info">
+            <p id="dishRank"></p>
+            <p id="dishName"></p>
+            <div class="dish-selected-info-buttons">
+              <div id="dish-video">
+                <p><i class="fa-solid fa-play"></i> Play Video</p>
+              </div>
+              <div id="order-dish">
+                <p><i class="fa-solid fa-bowl-food"></i> Order Food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dish-caraousel" id="dishCarousel">
+          <div>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="dish-caraousel-button">
+            
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="dish-overview">
+        <div class="dish-overview-ingred-buttons">
+          <p class="active">Overview</p>
+          <p class="in-active">Ingredients</p>
+        </div>
+        <div class="dish-review">
+          <div id="ratings"></div>
+          <div id="reviewHeading"></div>
+          <div id="reviewDetails"></div>
+          <div></div>
+        </div>
+        <div id="like-dislike">
+          <div>
+            <i class="fa-solid fa-thumbs-up">  </i> 
+          </div>
+          <div>
+            <i class="fa-solid fa-thumbs-down">  </i> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-icons">
+        <i class="fa-solid fa-utensils"></i>
+        <i class="fa-solid fa-wine-glass"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-pizza-slice"></i>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/358361ef21.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
